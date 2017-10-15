@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cuongptnk.flashlight">
+    
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.Camera"
+        android:required="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_flashlight"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu FlashLight" />
+        <activity
+            android:name=".LightActivity"
+            android:label="Light" />
+        <activity android:name=".NeonActivity" />
+        <activity android:name=".WarningActivity" />
+        <activity
+            android:name=".PolicActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".TrafficActivity" />
+        <activity android:name=".TorchActivity"></activity>
+    </application>
+
+</manifest>
